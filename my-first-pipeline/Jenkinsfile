@@ -8,5 +8,11 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('Test2') {
+      steps {
+        sh 'node systemctl status nginx'
+      }
+    }
   }
+  
 }
